@@ -2,9 +2,6 @@ syntax = "proto3";
 package pb;
 option go_package = "/services/bookAuthor-service/proto-bookAuthor-service";
 
-import "google/api/annotations.proto";
-import "google/api/validate.proto";
-
 service bookAuthorService {
   rpc GetBooks (GetBookRequest) returns (GetBookResponse);
   rpc GetAuthors (GetAuthorRequest) returns (GetAuthorResponse);
