@@ -3,7 +3,6 @@ package repository
 import (
 	"database/sql"
 	_ "github.com/lib/pq"
-	"log"
 	"testKwd/cmd/server/config"
 	"testKwd/libs/errors"
 
@@ -69,7 +68,7 @@ func (db DatabaseConn) GetBooks(nameAuthor string) ([]*proto_bookAuthor_service.
 	if err != nil {
 		return nil, errors.HandleDatabaseError(err)
 	}
-	log.Println(books)
+
 	return books, err
 }
 
