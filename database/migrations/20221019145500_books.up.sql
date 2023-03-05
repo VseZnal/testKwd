@@ -1,0 +1,7 @@
+BEGIN;
+
+CREATE TABLE books (
+    name TEXT NOT NULL PRIMARY KEY
+);
+
+COMMIT;
