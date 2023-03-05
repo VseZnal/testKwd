@@ -14,7 +14,7 @@ Make sure that docker is installed (for windows or mac install docker desktop)
 
 
 open terminal
-1. Run cd backend
+1. Run `cd backend`
 2. Run `go run ./cmd/server main.go` to start server
 3. Run `go run ./cmd/client/main.go` to start client
 
