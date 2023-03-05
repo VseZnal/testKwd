@@ -27,7 +27,7 @@ func main() {
 	}
 
 	client := proto_bookAuthor_service.NewBookAuthorServiceClient(conn)
-	author, err := client.GetAuthors(ctx, &proto_bookAuthor_service.GetAuthorRequest{BookName: "testBook1"})
+	author, err := client.GetAuthors(ctx, &proto_bookAuthor_service.GetAuthorRequest{BookName: "testBook3"})
 	if err != nil {
 		log.Fatalln(err)
 	}
