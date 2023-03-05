@@ -15,10 +15,10 @@ func main() {
 
 	conf := config.ServerConfig()
 
-	hostClient := conf.HostServer
-	portClient := conf.PortServer
+	host := conf.HostServer
+	port := conf.PortServer
 
-	clientServiceAddress := fmt.Sprintf("%s:%s", hostClient, portClient)
+	clientServiceAddress := fmt.Sprintf("%s:%s", host, port)
 
 	conn, err := grpc.Dial(clientServiceAddress,
 		grpc.WithTransportCredentials(insecure.NewCredentials()))
